@@ -35,7 +35,7 @@
     "app": {
       "name": "JHenTai",
       "bundleIdentifier": "top.jtmonster.jhentai",
-      "developerName": "jiangtian616",
+      "developerName": "JTMonster",
       "subtitle": "GitHub：jiangtian616/JHenTai",
       "localizedDescription": "来自 https://github.com/jiangtian616/JHenTai 的 IPA。安装前请核实项目来源和签名。",
       "iconURL": "https://raw.githubusercontent.com/jiangtian616/JHenTai/master/assets/icon/JHenTai.png",

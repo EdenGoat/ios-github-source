@@ -41,7 +41,10 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/cache.json
             git commit -m "chore: update IPA metadata cache [skip ci]"
-            git push
+
+            if ! git push; then
+              echo "::warning::缓存推送失败，可能是主分支已经更新。跳过缓存保存，继续部署软件源。"
+            fi
           fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

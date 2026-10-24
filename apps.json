@@ -26,6 +26,20 @@
       "asset_regex": "(?i).*\\.ipa$",
       "icon_url": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/assets/logo.png",
       "developer_name": "June6699"
+    },
+    {
+      "repo": "https://github.com/ComicSparks/pikapika",
+      "name": "Pikapika",
+      "asset_regex": "(?i).*\\.ipa$",
+      "icon_url": "https://raw.githubusercontent.com/ComicSparks/pikapika/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "developer_name": "ComicSparks"
+    },
+    {
+      "repo": "https://github.com/asadahimeka/pixiv-viewer-app",
+       "name": "Pixiv Viewer",
+      "asset_regex": "(?i).*\\.ipa$",
+      "icon_url": "https://raw.githubusercontent.com/asadahimeka/pixiv-viewer-app/main/public/img/icons/512.png",
+      "developer_name": "asadahimeka"
     }
   ]
 }

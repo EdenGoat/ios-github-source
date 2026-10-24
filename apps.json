@@ -1,0 +1,24 @@
+{
+  "source_name": "My GitHub Apps",
+  "source_subtitle": "自动追踪 GitHub Release 中的 IPA",
+  "source_description": "个人订阅源：GitHub Actions 自动检查 IPA 更新。",
+  "check_prerelease": false,
+  "max_versions": 5,
+  "apps": [
+    {
+      "repo": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+      "name": "PiliPlus",
+      "asset_regex": "(?i).*\\.ipa$"
+    },
+    {
+      "repo": "https://github.com/jiangtian616/JHenTai",
+      "name": "JHenTai",
+      "asset_regex": "(?i).*\\.ipa$"
+    },
+    {
+      "repo": "https://github.com/June6699/dart_simple_live",
+      "name": "Simple Live",
+      "asset_regex": "(?i).*\\.ipa$"
+    }
+  ]
+}

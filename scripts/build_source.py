@@ -189,9 +189,10 @@ def build():
         'apps': apps,
         'news': [],
     }
-    # AltStore/SideStore source icon is a top-level iconURL, not an app icon.
+    # Source icons: AltStore/SideStore use iconURL; 全能签 uses sourceicon.
     if conf.get('source_icon'):
         site['iconURL'] = conf['source_icon']
+        site['sourceicon'] = conf['source_icon']
     if any('jhentai' in a['name'].lower() for a in apps):
         site['nsfw'] = True
     SITE.mkdir(exist_ok=True)

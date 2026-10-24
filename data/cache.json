@@ -7,7 +7,7 @@
       "developerName": "bggRGjQaUbCoE",
       "subtitle": "GitHub：bggRGjQaUbCoE/PiliPlus",
       "localizedDescription": "来自 https://github.com/bggRGjQaUbCoE/PiliPlus 的 IPA。安装前请核实项目来源和签名。",
-      "iconURL": "https://github.com/bggRGjQaUbCoE.png?size=256",
+      "iconURL": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/assets/images/logo/logo.png",
       "versions": [
         {
           "version": "2.1.6",
@@ -38,7 +38,7 @@
       "developerName": "jiangtian616",
       "subtitle": "GitHub：jiangtian616/JHenTai",
       "localizedDescription": "来自 https://github.com/jiangtian616/JHenTai 的 IPA。安装前请核实项目来源和签名。",
-      "iconURL": "https://github.com/jiangtian616.png?size=256",
+      "iconURL": "https://raw.githubusercontent.com/jiangtian616/JHenTai/master/assets/icon/JHenTai.png",
       "versions": [
         {
           "version": "8.0.18",
@@ -68,7 +68,7 @@
       "developerName": "June6699",
       "subtitle": "GitHub：June6699/dart_simple_live",
       "localizedDescription": "来自 https://github.com/June6699/dart_simple_live 的 IPA。安装前请核实项目来源和签名。",
-      "iconURL": "https://github.com/June6699.png?size=256",
+      "iconURL": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/assets/logo.png",
       "versions": [
         {
           "version": "1.13.2",

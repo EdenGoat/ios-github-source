@@ -38,7 +38,7 @@
       "repo": "https://github.com/asadahimeka/pixiv-viewer-app",
        "name": "Pixiv Viewer",
       "asset_regex": "(?i).*\\.ipa$",
-      "icon_url": "https://raw.githubusercontent.com/asadahimeka/pixiv-viewer-app/main/public/img/icons/512.png",
+      "icon_url": "https://raw.githubusercontent.com/asadahimeka/pixiv-viewer-app/main/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512%402x.png",
       "developer_name": "asadahimeka"
     }
   ]

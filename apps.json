@@ -2,6 +2,7 @@
   "source_name": "自用APP更新",
   "source_subtitle": "自动追踪 GitHub Release 中的 IPA",
   "source_description": "个人订阅源：GitHub Actions 自动检查 IPA 更新。",
+  "source_icon": "https://github.githubassets.com/favicons/favicon.png",
   "check_prerelease": false,
   "max_versions": 5,
   "apps": [

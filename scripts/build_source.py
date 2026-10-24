@@ -44,29 +44,26 @@ def gh_api(path):
         return json.load(r)
 
 
-def choose_asset(repo, pattern, include_prerelease):
-    releases = gh_api(f'repos/{repo}/releases?per_page=30')
-    if not isinstance(releases, list):
-        raise ValueError('GitHub API 未返回 Release 列表')
-    matches = []
-    for rel in releases:
-        if rel.get('draft') or (rel.get('prerelease') and not include_prerelease):
-            continue
-        assets = [a for a in rel.get('assets', [])
-                  if str(a.get('name', '')).lower().endswith('.ipa')
-                  and re.search(pattern, str(a.get('name', '')))]
-        if not assets:
-            continue
-        assets.sort(key=lambda a: str(a.get('name', '')).lower())
-        if len(assets) > 1:
-            print(f'  提示：{rel.get("tag_name")} 存在 {len(assets)} 个匹配 IPA；选取 {assets[0]["name"]}，可用 asset_regex 精确匹配')
-        matches.append((rel, assets[0]))
-    if not matches:
+def choose_asset(repo, pattern):
+    """Use only GitHub's official Latest full Release (never drafts/prereleases)."""
+    rel = gh_api(f'repos/{repo}/releases/latest')
+    if not isinstance(rel, dict):
+        raise ValueError(f'{repo}: GitHub API 未返回 Latest Release 对象')
+    # Defence in depth: /releases/latest already excludes drafts/prereleases,
+    # but never publish either even if the API behaviour changes.
+    if rel.get('draft') or rel.get('prerelease'):
+        raise ValueError(f'{repo}: Latest 标签指向草稿或预发行版，拒绝发布')
+    print(f'  GitHub Latest 正式版：{rel.get("tag_name")}', flush=True)
+    assets = [a for a in rel.get('assets', [])
+              if str(a.get('name', '')).lower().endswith('.ipa')
+              and re.search(pattern, str(a.get('name', '')))]
+    if not assets:
+        print(f'  跳过：Latest 正式版 {rel.get("tag_name")} 没有匹配的 IPA；不会回退到旧版本')
         return None
-    # GitHub 的列表顺序未必严格等于发布时间，显式排序以避免 TV 专版干扰。
-    matches.sort(key=lambda ra: (ra[0].get('published_at') or ra[0].get('created_at') or '',
-                                  ra[0].get('id', 0)), reverse=True)
-    return matches[0]
+    assets.sort(key=lambda a: str(a.get('name', '')).lower())
+    if len(assets) > 1:
+        print(f'  提示：{rel.get("tag_name")} 存在 {len(assets)} 个匹配 IPA；选取 {assets[0]["name"]}，可用 asset_regex 精确匹配')
+    return rel, assets[0]
 
 
 def read_ipa(ipa_url):
@@ -116,9 +113,9 @@ def build():
             pattern = raw.get('asset_regex', r'(?i).*\.ipa$')
             re.compile(pattern)
             print(f'检查 {repo} ...', flush=True)
-            selected = choose_asset(repo, pattern, raw.get('prerelease', conf.get('check_prerelease', False)))
+            selected = choose_asset(repo, pattern)
             if not selected:
-                print(f'  跳过：最近 30 个 Release 中无匹配 IPA')
+                print('  跳过：GitHub Latest 正式版中无匹配 IPA')
                 continue
             rel, asset = selected
             asset_id = asset['id']

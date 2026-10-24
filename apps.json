@@ -7,11 +7,11 @@
   "max_versions": 5,
   "apps": [
     {
-      "repo": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+      "repo": "https://github.com/lemonteaau/PiliPlus",
       "name": "PiliPlus",
       "asset_regex": "(?i).*\\.ipa$",
-      "icon_url": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/assets/images/logo/logo.png",
-      "developer_name": "bggRGjQaUbCoE"
+      "icon_url": "https://raw.githubusercontent.com/lemonteaau/PiliPlus/main/assets/images/logo/logo.png",
+      "developer_name": "lemonteaau"
     },
     {
       "repo": "https://github.com/jiangtian616/JHenTai",

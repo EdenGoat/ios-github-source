@@ -1,5 +1,5 @@
 {
-  "source_name": "My GitHub Apps",
+  "source_name": "我的APP更新",
   "source_subtitle": "自动追踪 GitHub Release 中的 IPA",
   "source_description": "个人订阅源：GitHub Actions 自动检查 IPA 更新。",
   "check_prerelease": false,

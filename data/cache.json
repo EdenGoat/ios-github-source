@@ -129,7 +129,7 @@
       "developerName": "asadahimeka",
       "subtitle": "GitHub：asadahimeka/pixiv-viewer-app",
       "localizedDescription": "来自 https://github.com/asadahimeka/pixiv-viewer-app 的 IPA。安装前请核实项目来源和签名。",
-      "iconURL": "https://raw.githubusercontent.com/asadahimeka/pixiv-viewer-app/main/public/img/icons/512.png",
+      "iconURL": "https://raw.githubusercontent.com/asadahimeka/pixiv-viewer-app/main/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512%402x.png",
       "versions": [
         {
           "version": "1.37.6",

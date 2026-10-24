@@ -8,17 +8,23 @@
     {
       "repo": "https://github.com/bggRGjQaUbCoE/PiliPlus",
       "name": "PiliPlus",
-      "asset_regex": "(?i).*\\.ipa$"
+      "asset_regex": "(?i).*\\.ipa$",
+      "icon_url": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/assets/images/logo/logo.png",
+      "developer_name": "bggRGjQaUbCoE"
     },
     {
       "repo": "https://github.com/jiangtian616/JHenTai",
       "name": "JHenTai",
-      "asset_regex": "(?i).*\\.ipa$"
+      "asset_regex": "(?i).*\\.ipa$",
+      "icon_url": "https://raw.githubusercontent.com/jiangtian616/JHenTai/master/assets/icon/JHenTai.png",
+      "developer_name": "JTMonster"
     },
     {
       "repo": "https://github.com/June6699/dart_simple_live",
       "name": "Simple Live",
-      "asset_regex": "(?i).*\\.ipa$"
+      "asset_regex": "(?i).*\\.ipa$",
+      "icon_url": "https://raw.githubusercontent.com/June6699/dart_simple_live/master/simple_live_app/assets/logo.png",
+      "developer_name": "June6699"
     }
   ]
 }

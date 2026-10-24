@@ -146,7 +146,7 @@ def build():
                 app = {
                     'name': raw.get('name') or meta['name'] or repo.split('/')[1],
                     'bundleIdentifier': meta['bundle'],
-                    'developerName': repo.split('/')[0],
+                    'developerName': raw.get('developer_name') or repo.split('/')[0],
                     'subtitle': f'GitHub：{repo}',
                     'localizedDescription': f'来自 https://github.com/{repo} 的 IPA。安装前请核实项目来源和签名。',
                     'iconURL': raw.get('icon_url') or f'https://github.com/{repo.split("/")[0]}.png?size=256',
@@ -157,6 +157,8 @@ def build():
             # Editable presentation fields can change without redownloading the IPA.
             if raw.get('name'):
                 app['name'] = raw['name']
+            if raw.get('developer_name'):
+                app['developerName'] = raw['developer_name']
             app['iconURL'] = raw.get('icon_url') or f'https://github.com/{repo.split("/")[0]}.png?size=256'
             if app['bundleIdentifier'] in seen_bundle:
                 print(f'  跳过：重复 Bundle ID {app["bundleIdentifier"]}')

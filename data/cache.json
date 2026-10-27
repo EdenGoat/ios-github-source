@@ -1,6 +1,6 @@
 {
   "lemonteaau/PiliPlus": {
-    "asset_id": 680296561,
+    "asset_id": 680779162,
     "app": {
       "name": "PiliPlus",
       "bundleIdentifier": "com.lemontea.piliplus",
@@ -9,6 +9,15 @@
       "localizedDescription": "来自 https://github.com/lemonteaau/PiliPlus 的 IPA。安装前请核实项目来源和签名。",
       "iconURL": "https://raw.githubusercontent.com/lemonteaau/PiliPlus/main/assets/images/logo/logo.png",
       "versions": [
+        {
+          "version": "2.1.6",
+          "buildVersion": "5746",
+          "date": "2026-10-27",
+          "localizedDescription": "【Android 签名变更】2.1.6-fork.1248 之后的版本换了新签名。装着 2.1.6-fork.1248 或更早版本的设备不能直接覆盖更新，安装时会提示「应用未安装」或「与现有软件包冲突」，需要先卸载旧版再装新版。卸载会清空 App 数据，请先迁移：\n\n1. 在旧版打开 设置 → 关于，点「导入/导出登录信息」→「导出文件至本地」，再点「导入/导出设置」→「导出文件至本地」，把两个 json 存到「下载」等手机目录。\n2. 卸载旧版，安装新版。\n3. 在新版打开 设置 → 关于，用同样两项的「从本地文件导入」导回登录信息和设置。\n\n登录信息文件里有账号凭据，导入后请删掉，别发给别人。换签名之后装的版本以后照常更新，不受影响。\n\nPersonal PiliPlus fork build 2.1.6.2-fork.5746, based on upstream release 2.1.6.2.\n\nUpstream: https://github.com/bggRGjQaUbCoE/PiliPlus/commit/d680e3f95cf777ff20492dd2a23c89264481dca0\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.6.2\nSource: https://github.com/lemonteaau/PiliPlus/commit/b25dde9b38f0c8fb02ffc9085d8f0713f5bd318b\n\nUpstream release notes (2.1.6.2):\n\n专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08\n\nBuilds passed: Android APK, unsigned iOS IPA, Windows, macOS, Linux.\n",
+          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5746/PiliPlus-custom-ios-unsigned.ipa",
+          "size": 24717079,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "2.1.6",
           "buildVersion": "5739",
@@ -43,15 +52,6 @@
           "localizedDescription": "【Android 签名变更】2.1.6-fork.1248 之后的版本换了新签名。装着 2.1.6-fork.1248 或更早版本的设备不能直接覆盖更新，安装时会提示「应用未安装」或「与现有软件包冲突」，需要先卸载旧版再装新版。卸载会清空 App 数据，请先迁移：\n\n1. 在旧版打开 设置 → 关于，点「导入/导出登录信息」→「导出文件至本地」，再点「导入/导出设置」→「导出文件至本地」，把两个 json 存到「下载」等手机目录。\n2. 卸载旧版，安装新版。\n3. 在新版打开 设置 → 关于，用同样两项的「从本地文件导入」导回登录信息和设置。\n\n登录信息文件里有账号凭据，导入后请删掉，别发给别人。换签名之后装的版本以后照常更新，不受影响。\n\nPersonal PiliPlus fork build 2.1.6.2-fork.5718, based on upstream release 2.1.6.2.\n\nUpstream: https://github.com/bggRGjQaUbCoE/PiliPlus/commit/058794483080f5bf3d760e005118c0bd4698c51b\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.6.2\nSource: https://github.com/lemonteaau/PiliPlus/commit/af3d0e8d8242b78e79a4c48bff0aedee6021e82d\n\nUpstream release notes (2.1.6.2):\n\n专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08\n\nBuilds passed: Android APK, unsigned iOS IPA, Windows, macOS, Linux.\n",
           "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5718/PiliPlus-custom-ios-unsigned.ipa",
           "size": 24663535,
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.1.6",
-          "buildVersion": "5711",
-          "date": "2026-10-23",
-          "localizedDescription": "【Android 签名变更】2.1.6-fork.1248 之后的版本换了新签名。装着 2.1.6-fork.1248 或更早版本的设备不能直接覆盖更新，安装时会提示「应用未安装」或「与现有软件包冲突」，需要先卸载旧版再装新版。卸载会清空 App 数据，请先迁移：\n\n1. 在旧版打开 设置 → 关于，点「导入/导出登录信息」→「导出文件至本地」，再点「导入/导出设置」→「导出文件至本地」，把两个 json 存到「下载」等手机目录。\n2. 卸载旧版，安装新版。\n3. 在新版打开 设置 → 关于，用同样两项的「从本地文件导入」导回登录信息和设置。\n\n登录信息文件里有账号凭据，导入后请删掉，别发给别人。换签名之后装的版本以后照常更新，不受影响。\n\nPersonal PiliPlus fork build 2.1.6.2-fork.5711, based on upstream release 2.1.6.2.\n\nUpstream: https://github.com/bggRGjQaUbCoE/PiliPlus/commit/1edcc46777619cbbda3049363554a4cbbb453ee0\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.6.2\nSource: https://github.com/lemonteaau/PiliPlus/commit/65edebb4fe7c0d30dce015056abc1c96777a8dc8\n\nUpstream release notes (2.1.6.2):\n\n专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08\n\nBuilds passed: Android APK, unsigned iOS IPA, Windows, macOS, Linux.\n",
-          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5711/PiliPlus-custom-ios-unsigned.ipa",
-          "size": 24665888,
           "minOSVersion": "15.0"
         }
       ],

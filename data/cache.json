@@ -128,7 +128,7 @@
     }
   },
   "ComicSparks/pikapika": {
-    "asset_id": 483185813,
+    "asset_id": 684209209,
     "app": {
       "name": "Pikapika",
       "bundleIdentifier": "opensource.pikapika",
@@ -137,6 +137,15 @@
       "localizedDescription": "来自 https://github.com/ComicSparks/pikapika 的 IPA。安装前请核实项目来源和签名。",
       "iconURL": "https://raw.githubusercontent.com/ComicSparks/pikapika/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
       "versions": [
+        {
+          "version": "1.8.22",
+          "buildVersion": "46",
+          "date": "2026-10-28",
+          "localizedDescription": "v1.8.22",
+          "downloadURL": "https://github.com/ComicSparks/pikapika/releases/download/v1.8.22/pikapika-v1.8.22-ios_nosign-flutter_3.13.9.ipa",
+          "size": 17910050,
+          "minOSVersion": "12.0"
+        },
         {
           "version": "1.8.21",
           "buildVersion": "45",

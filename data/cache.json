@@ -67,7 +67,7 @@
     }
   },
   "jiangtian616/JHenTai": {
-    "asset_id": 669577207,
+    "asset_id": 694536780,
     "app": {
       "name": "JHenTai",
       "bundleIdentifier": "top.jtmonster.jhentai",
@@ -76,6 +76,15 @@
       "localizedDescription": "来自 https://github.com/jiangtian616/JHenTai 的 IPA。安装前请核实项目来源和签名。",
       "iconURL": "https://raw.githubusercontent.com/jiangtian616/JHenTai/master/assets/icon/JHenTai.png",
       "versions": [
+        {
+          "version": "8.0.18",
+          "buildVersion": "344",
+          "date": "2026-10-23",
+          "localizedDescription": "- 修复解锁归档时出现卡解析Ⅰ的异常问题\r\n\r\n--------------------\r\n\r\n- Fix the bug that caused a parsing error I when unlocking archives.",
+          "downloadURL": "https://github.com/jiangtian616/JHenTai/releases/download/v8.0.18/JHenTai_8.0.18%2B344.ipa",
+          "size": 13027008,
+          "minOSVersion": "13.0"
+        },
         {
           "version": "8.0.18",
           "buildVersion": "341",

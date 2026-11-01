@@ -160,9 +160,14 @@ def build():
             # PiliPlus Fork：展示完整的 GitHub Release 版本号
             # 保留 IPA 内部 version/buildVersion，避免影响安装验证
             if repo.lower() == 'lemonteaau/piliplus' and app.get('versions'):
-                tag = str(rel.get('tag_name') or '')
+                tag = str(rel.get('tag_name') or '').removeprefix('v')
                 if tag:
-                    app['versions'][0]['marketingVersion'] = tag.removeprefix('v')
+                    app['versions'][0]['marketingVersion'] = tag
+                    app['subtitle'] = f'最新版本：{tag}'
+                    notes = str(rel.get('body') or '来自 GitHub Release')
+                    app['versions'][0]['localizedDescription'] = (
+                        f'GitHub 发布版本：{tag}\n\n{notes}'
+                    )[:5000]
             if app['bundleIdentifier'] in seen_bundle:
                 print(f'  跳过：重复 Bundle ID {app["bundleIdentifier"]}')
                 continue

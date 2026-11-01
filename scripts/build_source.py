@@ -157,6 +157,12 @@ def build():
             if raw.get('developer_name'):
                 app['developerName'] = raw['developer_name']
             app['iconURL'] = raw.get('icon_url') or f'https://github.com/{repo.split("/")[0]}.png?size=256'
+            # PiliPlus Fork：展示完整的 GitHub Release 版本号
+            # 保留 IPA 内部 version/buildVersion，避免影响安装验证
+            if repo.lower() == 'lemonteaau/piliplus' and app.get('versions'):
+                tag = str(rel.get('tag_name') or '')
+                if tag:
+                    app['versions'][0]['marketingVersion'] = tag.removeprefix('v')
             if app['bundleIdentifier'] in seen_bundle:
                 print(f'  跳过：重复 Bundle ID {app["bundleIdentifier"]}')
                 continue

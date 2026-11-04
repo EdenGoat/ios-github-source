@@ -1,14 +1,24 @@
 {
   "lemonteaau/PiliPlus": {
-    "asset_id": 703793215,
+    "asset_id": 707503671,
     "app": {
       "name": "PiliPlus",
       "bundleIdentifier": "com.lemontea.piliplus",
       "developerName": "lemonteaau",
-      "subtitle": "最新版本：2.2.0.1-fork.5785",
+      "subtitle": "最新版本：2.2.0.2-fork.5794",
       "localizedDescription": "来自 https://github.com/lemonteaau/PiliPlus 的 IPA。安装前请核实项目来源和签名。",
       "iconURL": "https://raw.githubusercontent.com/lemonteaau/PiliPlus/main/assets/images/logo/logo.png",
       "versions": [
+        {
+          "version": "2.2.0",
+          "buildVersion": "5794",
+          "date": "2026-11-03",
+          "localizedDescription": "GitHub 发布版本：2.2.0.2-fork.5794\n\n【Android 签名变更】2.1.6-fork.1248 之后的版本换了新签名。装着 2.1.6-fork.1248 或更早版本的设备不能直接覆盖更新，安装时会提示「应用未安装」或「与现有软件包冲突」，需要先卸载旧版再装新版。卸载会清空 App 数据，请先迁移：\n\n1. 在旧版打开 设置 → 关于，点「导入/导出登录信息」→「导出文件至本地」，再点「导入/导出设置」→「导出文件至本地」，把两个 json 存到「下载」等手机目录。\n2. 卸载旧版，安装新版。\n3. 在新版打开 设置 → 关于，用同样两项的「从本地文件导入」导回登录信息和设置。\n\n登录信息文件里有账号凭据，导入后请删掉，别发给别人。换签名之后装的版本以后照常更新，不受影响。\n\nPersonal PiliPlus fork build 2.2.0.2-fork.5794, based on upstream release 2.2.0.2.\n\nUpstream: https://github.com/bggRGjQaUbCoE/PiliPlus/commit/d9e9626f1a3f89cd9ca85e18f61aaba02634e12a\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0.2\nSource: https://github.com/lemonteaau/PiliPlus/commit/07ca9600b9b545a5ab1dd32f7ebf2941c1ab94ad\n\nUpstream release notes (2.2.0.2):\n\n更新投屏依赖 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/2680#issuecomment-6597938908\r\n修复部分视频评论显示不全 #3458\r\n修复播放课堂视频 #3454 by @ucxn\r\n修复 macOS 关闭系统标题栏后无法拖动 #3453 by @NalCol\r\n修复点赞弹幕跳转未留提前量，导致跳转到弹幕时无法加载 #3459 by @Rim-World\r\nChromeOS(ARC) 上不再主动请求屏幕方向，由系统决定窗口方向 #3406 co-by @selcarpa\n\nBuilds passed: Android APK, unsigned iOS IPA, Windows, macOS, Linux.\n",
+          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.2.0.2-fork.5794/PiliPlus-custom-ios-unsigned.ipa",
+          "size": 25009424,
+          "minOSVersion": "15.0",
+          "marketingVersion": "2.2.0.2-fork.5794"
+        },
         {
           "version": "2.2.0",
           "buildVersion": "5785",
@@ -46,15 +56,6 @@
           "localizedDescription": "【Android 签名变更】2.1.6-fork.1248 之后的版本换了新签名。装着 2.1.6-fork.1248 或更早版本的设备不能直接覆盖更新，安装时会提示「应用未安装」或「与现有软件包冲突」，需要先卸载旧版再装新版。卸载会清空 App 数据，请先迁移：\n\n1. 在旧版打开 设置 → 关于，点「导入/导出登录信息」→「导出文件至本地」，再点「导入/导出设置」→「导出文件至本地」，把两个 json 存到「下载」等手机目录。\n2. 卸载旧版，安装新版。\n3. 在新版打开 设置 → 关于，用同样两项的「从本地文件导入」导回登录信息和设置。\n\n登录信息文件里有账号凭据，导入后请删掉，别发给别人。换签名之后装的版本以后照常更新，不受影响。\n\nPersonal PiliPlus fork build 2.1.6.2-fork.5761, based on upstream release 2.1.6.2.\n\nUpstream: https://github.com/bggRGjQaUbCoE/PiliPlus/commit/cb17739448a73dc829e55a134ad6cf28400c814d\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.6.2\nSource: https://github.com/lemonteaau/PiliPlus/commit/cbd425fb855d76a1fec8ba857c9c20043dcacf14\n\nUpstream release notes (2.1.6.2):\n\n专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08\n\nBuilds passed: Android APK, unsigned iOS IPA, Windows, macOS, Linux.\n",
           "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5761/PiliPlus-custom-ios-unsigned.ipa",
           "size": 24728268,
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.1.6",
-          "buildVersion": "5755",
-          "date": "2026-10-29",
-          "localizedDescription": "【Android 签名变更】2.1.6-fork.1248 之后的版本换了新签名。装着 2.1.6-fork.1248 或更早版本的设备不能直接覆盖更新，安装时会提示「应用未安装」或「与现有软件包冲突」，需要先卸载旧版再装新版。卸载会清空 App 数据，请先迁移：\n\n1. 在旧版打开 设置 → 关于，点「导入/导出登录信息」→「导出文件至本地」，再点「导入/导出设置」→「导出文件至本地」，把两个 json 存到「下载」等手机目录。\n2. 卸载旧版，安装新版。\n3. 在新版打开 设置 → 关于，用同样两项的「从本地文件导入」导回登录信息和设置。\n\n登录信息文件里有账号凭据，导入后请删掉，别发给别人。换签名之后装的版本以后照常更新，不受影响。\n\nPersonal PiliPlus fork build 2.1.6.2-fork.5755, based on upstream release 2.1.6.2.\n\nUpstream: https://github.com/bggRGjQaUbCoE/PiliPlus/commit/5f9cc3b9c77c5454709a4616fe33197a94ba859e\nUpstream release: https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.1.6.2\nSource: https://github.com/lemonteaau/PiliPlus/commit/340775efb1fdb9c1dd962c49066f09a582919815\n\nUpstream release notes (2.1.6.2):\n\n专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08\n\nBuilds passed: Android APK, unsigned iOS IPA, Windows, macOS, Linux.\n",
-          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5755/PiliPlus-custom-ios-unsigned.ipa",
-          "size": 24715345,
           "minOSVersion": "15.0"
         }
       ],
